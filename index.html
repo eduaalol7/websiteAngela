@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSG - Construcción y Soluciones Eléctricas Profesionales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Sticky -->
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <svg viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                    <!-- Bombilla -->
+                    <circle cx="100" cy="70" r="55" fill="none" stroke="#CFAB5C" stroke-width="8"/>
+                    <path d="M 100 20 Q 75 45 75 70 Q 75 85 85 95 L 115 95 Q 125 85 125 70 Q 125 45 100 20" fill="none" stroke="#1A2D40" stroke-width="6" stroke-linecap="round"/>
+                    <g transform="translate(100, 50)">
+                        <circle cx="0" cy="0" r="12" fill="none" stroke="#1A2D40" stroke-width="5"/>
+                        <circle cx="-8" cy="-8" r="2" fill="#1A2D40"/>
+                        <circle cx="8" cy="-8" r="2" fill="#1A2D40"/>
+                        <circle cx="8" cy="8" r="2" fill="#1A2D40"/>
+                        <circle cx="-8" cy="8" r="2" fill="#1A2D40"/>
+                    </g>
+                    <!-- Herramientas -->
+                    <g transform="translate(130, 45)">
+                        <line x1="0" y1="0" x2="15" y2="15" stroke="#1A2D40" stroke-width="4" stroke-linecap="round"/>
+                        <circle cx="0" cy="0" r="6" fill="none" stroke="#1A2D40" stroke-width="3"/>
+                        <circle cx="15" cy="15" r="5" fill="#1A2D40"/>
+                    </g>
+                    <g transform="translate(65, 35)">
+                        <path d="M -5 5 L 5 -5 M -5 -5 L 5 5" stroke="#1A2D40" stroke-width="4" stroke-linecap="round"/>
+                        <circle cx="0" cy="0" r="8" fill="none" stroke="#1A2D40" stroke-width="3"/>
+                    </g>
+                    <!-- Base de bombilla -->
+                    <rect x="85" y="100" width="30" height="25" rx="2" fill="#1A2D40"/>
+                    <rect x="80" y="125" width="40" height="8" rx="2" fill="#1A2D40"/>
+                    <circle cx="100" cy="140" r="10" fill="#1A2D40"/>
+                </svg>
+            </a>
+            <nav class="header__nav">
+                <a href="index.html#inicio" class="nav-link" data-section="inicio">Inicio</a>
+                <a href="index.html#servicios" class="nav-link" data-section="servicios">Servicios</a>
+                <a href="index.html#nosotros" class="nav-link" data-section="nosotros">Sobre Nosotros</a>
+                <a href="index.html#proyectos" class="nav-link" data-section="proyectos">Proyectos</a>
+            </nav>
+            <div class="header__actions">
+                <button class="btn-theme" id="themeToggle" aria-label="Cambiar tema">
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="btn btn--cta" id="btnPresupuesto">SOLICITAR PRESUPUESTO</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero__background">
+            <div class="hero__bg-gradient"></div>
+            <div class="hero__animated-elements">
+                <div class="shape shape--1"></div>
+                <div class="shape shape--2"></div>
+                <div class="shape shape--3"></div>
+            </div>
+        </div>
+        
+        <div class="hero__content">
+            <div class="hero__text">
+                <h1 class="hero__title">Expertos en Construcción y Soluciones Eléctricas Profesionales</h1>
+                <p class="hero__subtitle">Calidad, confiabilidad y atención al detalle en cada proyecto residencial y comercial.</p>
+                <button class="btn btn--primary">EMPEZAR MI PROYECTO</button>
+            </div>
+            
+            <form class="hero__form" id="contactForm">
+                <h3 class="form__title">Solicita tu consulta</h3>
+                <input type="text" placeholder="Tu Nombre" class="form__input" required>
+                <input type="tel" placeholder="Teléfono" class="form__input" required>
+                <textarea placeholder="Describe tu proyecto" class="form__textarea" rows="4" required></textarea>
+                <button type="submit" class="btn btn--accent">ENVIAR CONSULTA</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section class="servicios" id="servicios">
+        <div class="container">
+            <h2 class="section__title">Nuestras Áreas de Especialización</h2>
+            
+            <div class="servicios__grid">
+                <!-- Construcción -->
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 20 70 L 30 40 L 50 30 L 70 40 L 80 70 M 50 30 L 50 70 M 35 70 L 65 70" stroke="#CFAB5C" stroke-width="3" fill="none" stroke-linecap="round"/>
+                            <rect x="40" y="50" width="20" height="20" stroke="#CFAB5C" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Construcción</h3>
+                    <p class="service-card__description">Proyectos residenciales y comerciales con acabados de primera calidad.</p>
+                    <a href="servicio-construccion.html" class="service-card__link">Ver detalles →</a>
+                </div>
+
+                <!-- Electricidad -->
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 30 50 L 50 20 L 45 45 L 70 50 L 45 55 L 50 80 Z" fill="#CFAB5C"/>
+                            <circle cx="50" cy="50" r="40" stroke="#CFAB5C" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Electricidad</h3>
+                    <p class="service-card__description">Instalaciones seguras y modernas con certificación profesional.</p>
+                    <a href="servicio-electricidad.html" class="service-card__link">Ver detalles →</a>
+                </div>
+
+                <!-- Mantenimiento -->
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 30 50 Q 30 30 50 30 Q 70 30 70 50 Q 70 70 50 70 Q 30 70 30 50" stroke="#CFAB5C" stroke-width="3" fill="none"/>
+                            <path d="M 40 45 L 50 55 L 60 35" stroke="#CFAB5C" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Mantenimiento</h3>
+                    <p class="service-card__description">Soluciones completas de mantenimiento preventivo y correctivo.</p>
+                    <a href="servicio-mantenimiento.html" class="service-card__link">Ver detalles →</a>
+                </div>
+
+                <!-- Reformas -->
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="25" y="30" width="50" height="50" stroke="#CFAB5C" stroke-width="2" fill="none"/>
+                            <path d="M 35 45 L 50 60 L 65 45" stroke="#CFAB5C" stroke-width="3" fill="none" stroke-linecap="round"/>
+                            <circle cx="50" cy="35" r="4" fill="#CFAB5C"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Reformas Integrales</h3>
+                    <p class="service-card__description">Transformamos espacios con diseño y funcionalidad modernos.</p>
+                    <a href="servicio-reformas.html" class="service-card__link">Ver detalles →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="whyus" id="nosotros">
+        <div class="container">
+            <h2 class="section__title section__title--light">¿Por Qué Elegir a MSG?</h2>
+            
+            <div class="whyus__content">
+                <div class="whyus__features">
+                    <div class="feature">
+                        <div class="feature__icon">✓</div>
+                        <div class="feature__text">
+                            <h3>Licenciados e Asegurados</h3>
+                            <p>Garantía y respaldo profesional en cada proyecto.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature__icon">✓</div>
+                        <div class="feature__text">
+                            <h3>Garantía de Trabajo</h3>
+                            <p>Cobertura completa en todos nuestros servicios.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature__icon">✓</div>
+                        <div class="feature__text">
+                            <h3>Atención al Cliente Local</h3>
+                            <p>Comunicación directa y respuesta rápida.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature__icon">✓</div>
+                        <div class="feature__text">
+                            <h3>15+ Años de Experiencia</h3>
+                            <p>Trayectoria comprobada en la industria.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="whyus__image">
+                    <div class="image-placeholder">
+                        <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="300" height="400" fill="url(#imagePlaceholder)"/>
+                            <defs>
+                                <linearGradient id="imagePlaceholder" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#1A2D40;stop-opacity:0.8" />
+                                    <stop offset="100%" style="stop-color:#CFAB5C;stop-opacity:0.6" />
+                                </linearGradient>
+                            </defs>
+                            <text x="150" y="200" font-size="24" fill="white" text-anchor="middle" font-family="Arial">Foto de equipo MSG</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos Section -->
+    <section class="proyectos" id="proyectos">
+        <div class="container-full">
+            <h2 class="section__title section__title--light">Nuestro Trabajo en Acción</h2>
+            
+            <div class="carousel">
+                <div class="carousel__track">
+                    <div class="carousel__slide">
+                        <div class="slide__content">
+                            <div class="slide__label">Electricidad</div>
+                            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&h=400&fit=crop" alt="Proyecto Electricidad">
+                        </div>
+                    </div>
+                    <div class="carousel__slide">
+                        <div class="slide__content">
+                            <div class="slide__label">Construcción</div>
+                            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&h=400&fit=crop" alt="Proyecto Construcción">
+                        </div>
+                    </div>
+                    <div class="carousel__slide">
+                        <div class="slide__content">
+                            <div class="slide__label">Reformas</div>
+                            <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&h=400&fit=crop" alt="Proyecto Reforma">
+                        </div>
+                    </div>
+                    <div class="carousel__slide">
+                        <div class="slide__content">
+                            <div class="slide__label">Mantenimiento</div>
+                            <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&h=400&fit=crop" alt="Proyecto Mantenimiento">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel__btn carousel__btn--prev">←</button>
+                <button class="carousel__btn carousel__btn--next">→</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <div class="footer__logo">MSG</div>
+                    <p>Dirección: 123 Calle Principal<br>Ciudad, Estado 12345</p>
+                    <p>📞 +1 (555) 123-4567<br>📧 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7f161119103f120c181c10110c0b0d0a1c1c161011511c1012">[email&#160;protected]</a></p>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">in</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 MSG Construction & Electric. Todos los d
