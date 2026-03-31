@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantenimiento - MSG | Servicios Profesionales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Sticky -->
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <svg viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                    <circle cx="100" cy="70" r="55" fill="none" stroke="#CFAB5C" stroke-width="8"/>
+                    <path d="M 100 20 Q 75 45 75 70 Q 75 85 85 95 L 115 95 Q 125 85 125 70 Q 125 45 100 20" fill="none" stroke="#1A2D40" stroke-width="6" stroke-linecap="round"/>
+                    <g transform="translate(100, 50)">
+                        <circle cx="0" cy="0" r="12" fill="none" stroke="#1A2D40" stroke-width="5"/>
+                        <circle cx="-8" cy="-8" r="2" fill="#1A2D40"/>
+                        <circle cx="8" cy="-8" r="2" fill="#1A2D40"/>
+                        <circle cx="8" cy="8" r="2" fill="#1A2D40"/>
+                        <circle cx="-8" cy="8" r="2" fill="#1A2D40"/>
+                    </g>
+                    <g transform="translate(130, 45)">
+                        <line x1="0" y1="0" x2="15" y2="15" stroke="#1A2D40" stroke-width="4" stroke-linecap="round"/>
+                        <circle cx="0" cy="0" r="6" fill="none" stroke="#1A2D40" stroke-width="3"/>
+                        <circle cx="15" cy="15" r="5" fill="#1A2D40"/>
+                    </g>
+                    <g transform="translate(65, 35)">
+                        <path d="M -5 5 L 5 -5 M -5 -5 L 5 5" stroke="#1A2D40" stroke-width="4" stroke-linecap="round"/>
+                        <circle cx="0" cy="0" r="8" fill="none" stroke="#1A2D40" stroke-width="3"/>
+                    </g>
+                    <rect x="85" y="100" width="30" height="25" rx="2" fill="#1A2D40"/>
+                    <rect x="80" y="125" width="40" height="8" rx="2" fill="#1A2D40"/>
+                    <circle cx="100" cy="140" r="10" fill="#1A2D40"/>
+                </svg>
+            </a>
+            <nav class="header__nav">
+                <a href="index.html#inicio" class="nav-link">Inicio</a>
+                <a href="index.html#servicios" class="nav-link">Servicios</a>
+                <a href="index.html#nosotros" class="nav-link">Sobre Nosotros</a>
+                <a href="index.html#proyectos" class="nav-link">Proyectos</a>
+            </nav>
+            <div class="header__actions">
+                <button class="btn-theme" id="themeToggle" aria-label="Cambiar tema">
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="btn btn--cta">SOLICITAR PRESUPUESTO</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Service -->
+    <section class="service-hero">
+        <div class="service-hero__background">
+            <div class="hero__bg-gradient"></div>
+        </div>
+        <div class="container service-hero__content">
+            <a href="index.html#servicios" class="breadcrumb">← Volver a Servicios</a>
+            <h1 class="service-hero__title">Servicios de Mantenimiento Integral</h1>
+            <p class="service-hero__subtitle">Soluciones completas de mantenimiento preventivo y correctivo para garantizar el buen funcionamiento de tu propiedad.</p>
+        </div>
+    </section>
+
+    <!-- Descripción del Servicio -->
+    <section class="service-description">
+        <div class="container">
+            <div class="service-desc__grid">
+                <div class="service-desc__text">
+                    <h2>¿Qué Incluye Nuestro Servicio?</h2>
+                    <p>Ofrecemos planes de mantenimiento personalizados para mantener tu propiedad en óptimas condiciones, previniendo problemas costosos y extendiendo la vida útil de tus instalaciones.</p>
+                    <ul class="service-features">
+                        <li>✓ Mantenimiento preventivo programado</li>
+                        <li>✓ Inspecciones regulares de seguridad</li>
+                        <li>✓ Reparaciones de emergencia 24/7</li>
+                        <li>✓ Reportes detallados de condición</li>
+                        <li>✓ Planes anuales personalizados</li>
+                        <li>✓ Garantía en servicios prestados</li>
+                    </ul>
+                </div>
+                <div class="service-desc__image">
+                    <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=500&h=500&fit=crop" alt="Proyecto de mantenimiento">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarifas y Precios -->
+    <section class="pricing">
+        <div class="container">
+            <h2 class="section__title">Nuestras Tarifas</h2>
+            <div class="pricing__grid">
+                <!-- Plan Básico -->
+                <div class="pricing-card">
+                    <h3>Plan Residencial</h3>
+                    <div class="pricing__price">$99</div>
+                    <p class="pricing__description">Mensual</p>
+                    <ul class="pricing__features">
+                        <li>✓ 2 visitas mensuales</li>
+                        <li>✓ Inspección general</li>
+                        <li>✓ Reparaciones menores</li>
+                        <li>✓ Reporte mensual</li>
+                        <li>✓ Descuento en servicios</li>
+                    </ul>
+                    <button class="btn btn--cta pricing__btn">Contratar Plan</button>
+                </div>
+
+                <!-- Plan Estándar -->
+                <div class="pricing-card pricing-card--featured">
+                    <div class="pricing-badge">Más Popular</div>
+                    <h3>Plan Comercial</h3>
+                    <div class="pricing__price">$299</div>
+                    <p class="pricing__description">Mensual</p>
+                    <ul class="pricing__features">
+                        <li>✓ 4 visitas mensuales</li>
+                        <li>✓ Inspección completa</li>
+                        <li>✓ Servicio de emergencia</li>
+                        <li>✓ Reportes semanales</li>
+                        <li>✓ 20% descuento en servicios</li>
+                    </ul>
+                    <button class="btn btn--cta pricing__btn">Contratar Plan</button>
+                </div>
+
+                <!-- Plan Premium -->
+                <div class="pricing-card">
+                    <h3>Plan Premium Empresarial</h3>
+                    <div class="pricing__price">Personalizado</div>
+                    <p class="pricing__description">Según necesidades</p>
+                    <ul class="pricing__features">
+                        <li>✓ Visitas ilimitadas</li>
+                        <li>✓ Inspección especializada</li>
+                        <li>✓ Atención prioritaria</li>
+                        <li>✓ Reportes diarios</li>
+                        <li>✓ 30% descuento en servicios</li>
+                    </ul>
+                    <button class="btn btn--cta pricing__btn">Solicitar Cotización</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Cotización -->
+    <section class="quote-section">
+        <div class="container">
+            <h2 class="section__title section__title--light">Solicita tu Plan de Mantenimiento</h2>
+            <div class="quote-form__wrapper">
+                <form class="quote-form" id="quoteForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono *</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipo">Tipo de Propiedad *</label>
+                        <select id="tipo" name="tipo" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="residencial">Residencial</option>
+                            <option value="comercial">Comercial</option>
+                            <option value="industrial">Industrial</option>
+                            <option value="mixta">Mixta</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="area">Área de Propiedad (m²) *</label>
+                        <input type="number" id="area" name="area" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Describe tus Necesidades de Mantenimiento *</label>
+                        <textarea id="descripcion" name="descripcion" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary">SOLICITAR COTIZACIÓN</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <div class="footer__logo">MSG</div>
+                    <p>Dirección: 123 Calle Principal<br>Ciudad, Estado 12345</p>
+                    <p>📞 +1 (555) 123-4567<br>📧 info@msgconstruccion.com</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html#servicios">Servicios</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">in</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 MSG Construction & Electric. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
